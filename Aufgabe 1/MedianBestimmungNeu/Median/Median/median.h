@@ -17,7 +17,8 @@ public:
 	~median();
 	void einlesen();
 	int medianBerechnung();
-	void vertausche(int,int);
-	int spalteAuf(int, int,int);
+private:
+	void vertausche(int, int);
+	int spalteAuf(int, int, int);
 };
 

@@ -43,6 +43,7 @@ int median::medianBerechnung()
 	{
 		tind = spalteAuf(n1, n2,tind);
 		tind = tind - n1 + 1;
+		cout << k << endl;
 		if (tind < k)
 		{
 			n1 = n1 + tind;
