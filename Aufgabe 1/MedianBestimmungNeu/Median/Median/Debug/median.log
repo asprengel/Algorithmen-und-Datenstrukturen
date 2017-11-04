@@ -1,4 +1,4 @@
 ﻿  median.cpp
-c:\users\user\documents\github\algorithmen\aufgabe 1\medianbestimmungneu\median\median\median.cpp(28): warning C4244: "=": Konvertierung von "double" in "int", möglicher Datenverlust
+c:\users\user\documents\github\algorithmen\aufgabe 1\medianbestimmungneu\median\median\median.cpp(29): warning C4244: "=": Konvertierung von "double" in "int", möglicher Datenverlust
   Median.vcxproj -> C:\Users\User\Documents\GitHub\Algorithmen\Aufgabe 1\MedianBestimmungNeu\Median\Debug\Median.exe
   Median.vcxproj -> C:\Users\User\Documents\GitHub\Algorithmen\Aufgabe 1\MedianBestimmungNeu\Median\Debug\Median.pdb (Full PDB)
