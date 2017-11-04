@@ -58,24 +58,28 @@ int median::medianBerechnung()
 }
 
 
-void median::vertausche(int tauschIndex1,int tauschIndex2)
+void median::vertausche(int tauschWert1,int tauschWert2)
 {
 	int temp; 
-	temp = werte[tauschIndex1];
-	werte[tauschIndex1] = werte[tauschIndex2];
-	werte[tauschIndex2] = temp;
+	temp = tauschWert1;
+	tauschWert1 = tauschWert2;
+	tauschWert2 = temp;
+
+	//temp = werte[tauschIndex1];
+	//werte[tauschIndex1] = werte[tauschIndex2];
+	//werte[tauschIndex2] = temp;
 }
 
 int median::spalteAuf(int n1, int n2, int tind)
 {
-	vertausche(tind,n1);
+	vertausche(werte[tind], werte[n1]);
 	tind = n1;
 	for (int i = n1 + 1; i < n2; i++)
 	{
 		if (werte[i] <= werte[tind]) 
 		{
-			vertausche(i, tind + 1);
-			vertausche(tind, tind + 1);
+			vertausche(werte[i], werte[tind + 1]);
+			vertausche(werte[tind], werte[tind + 1]);
 			tind = tind + 1;
 		}
 	}
