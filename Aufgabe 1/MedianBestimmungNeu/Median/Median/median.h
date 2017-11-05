@@ -8,17 +8,17 @@ using namespace std;
 
 class median
 {
-	int laenge=0;
-	int werte[250000];
-	int k;
-	
 public:
 	median();
 	~median();
 	void einlesen();
 	int medianBerechnung();
 private:
-	void vertausche(int, int);
+	void vertausche(int&, int&);
 	int spalteAuf(int, int, int);
+
+	int laenge = 0;
+	int werte[250000];
+	int k;
 };
 

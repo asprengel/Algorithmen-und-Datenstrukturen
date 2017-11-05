@@ -58,7 +58,7 @@ int median::medianBerechnung()
 }
 
 
-void median::vertausche(int tauschWert1,int tauschWert2)
+void median::vertausche(int &tauschWert1,int &tauschWert2)
 {
 	int temp; 
 	temp = tauschWert1;
